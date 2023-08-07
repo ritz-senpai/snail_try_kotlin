@@ -1,0 +1,40 @@
+fun main() {
+   val age=24
+    val layers=5
+    printCandles(age)
+    printCakeTop(age)
+    printCakeBottom(age,layers)
+    print("Happy Birthday Senpai !!")
+
+
+}
+fun printCandles(age:Int){
+    print(" ")
+    repeat(age){
+        print(",")
+    }
+    println()
+    print(" ")
+    repeat(age){
+        print("|")
+    }
+    println()
+}
+fun printCakeTop(age: Int){
+    print(" ")
+    repeat(age){
+        print("=")
+    }
+    println()
+
+}
+fun printCakeBottom(age: Int,layers:Int){
+
+    repeat(layers){
+
+        repeat(age+2) {
+            print("@")
+        }
+        println()
+    }
+}
